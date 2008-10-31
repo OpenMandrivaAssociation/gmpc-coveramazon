@@ -34,5 +34,5 @@ This plugin fetches cover art, and album information from amazon.
 
 %files
 %defattr(-,root,root)
-%{_datadir}/gmpc/plugins/caaplugin.la
-%{_datadir}/gmpc/plugins/caaplugin.so
+%{_libdir}/gmpc/plugins/caaplugin.la
+%{_libdir}/gmpc/plugins/caaplugin.so
