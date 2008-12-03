@@ -29,6 +29,10 @@ This plugin fetches cover art, and album information from amazon.
 
 %makeinstall_std
 
+%if "%_libdir" != "%_prefix/lib"
+mv %buildroot%_prefix/lib %buildroot%_libdir
+%endif
+
 %clean
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
 
