@@ -1,6 +1,6 @@
 Summary:	An Amazon plugin for gmpc
 Name:		gmpc-coveramazon
-Version:	0.16.0
+Version:	0.17.0
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Sound
@@ -28,10 +28,6 @@ This plugin fetches cover art, and album information from amazon.
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
 
 %makeinstall_std
-
-%if "%_libdir" != "%_prefix/lib"
-mv %buildroot%_prefix/lib %buildroot%_libdir
-%endif
 
 %clean
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
