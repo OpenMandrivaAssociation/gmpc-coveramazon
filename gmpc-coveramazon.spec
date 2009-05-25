@@ -1,15 +1,15 @@
 Summary:	An Amazon plugin for gmpc
 Name:		gmpc-coveramazon
-Version:	0.17.0
+Version:	0.18.0
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Sound
 Url:		http://www.sarine.nl//amazon-provider
-Source0:	http://download.sarine.nl/Programs/gmpc/%{version}/%{name}-%{version}.tar.bz2
-BuildRequires:	libmpd-devel
+Source0:	http://download.sarine.nl/Programs/gmpc/%{version}/%{name}-%{version}.tar.gz
+BuildRequires:	libmpd-devel >= 0.15.98
 BuildRequires:	libxml2-devel
-BuildRequires:	libglade2.0-devel
-BuildRequires:	gmpc-devel
+BuildRequires:	gtk+2-devel >= 2.4
+BuildRequires:	gmpc-devel >= 0.16.2
 Requires:	gmpc
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
@@ -21,7 +21,6 @@ This plugin fetches cover art, and album information from amazon.
 
 %build
 %configure2_5x
-
 %make
 
 %install
