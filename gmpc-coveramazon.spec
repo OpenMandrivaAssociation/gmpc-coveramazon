@@ -4,7 +4,7 @@ Version:	0.18.0
 Release:	%mkrel 2
 License:	GPLv2+
 Group:		Sound
-Url:		http://www.sarine.nl//amazon-provider
+Url:		https://www.sarine.nl//amazon-provider
 Source0:	http://download.sarine.nl/Programs/gmpc/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	libmpd-devel >= 0.15.98
 BuildRequires:	libxml2-devel
