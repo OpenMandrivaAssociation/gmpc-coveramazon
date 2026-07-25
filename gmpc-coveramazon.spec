@@ -1,7 +1,7 @@
 Summary:	An Amazon plugin for gmpc
 Name:		gmpc-coveramazon
 Version:	0.18.0
-Release:	%mkrel 2
+Release:	3
 License:	GPLv2+
 Group:		Sound
 Url:		https://www.sarine.nl//amazon-provider
